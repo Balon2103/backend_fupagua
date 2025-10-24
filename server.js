@@ -35,12 +35,7 @@ app.get("/", (req, res) => {
   res.send(`
     <h1>✅ Backend FUPAGUA iniciado con éxito!</h1>
     <p>El servidor está corriendo en el puerto ${PORT}</p>
-    <p>Rutas disponibles:</p>
-    <ul>
-      <li>/api/v1/auth</li>
-      <li>/api/v1/principal</li>
-      <li>/api/v1/documentos</li>
-    </ul>
+    
   `);
 });
 
