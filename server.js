@@ -15,7 +15,7 @@ const app = express();
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "https://fupagua.org",
+    origin: process.env.CLIENT_URL || "https://www.fupagua.org",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization", "Content-Disposition"],
   })
