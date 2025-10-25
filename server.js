@@ -15,7 +15,7 @@ const app = express();
 // CORS
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "https://gestion-fupagua.vercel.app",
+    origin: process.env.CLIENT_URL || "https://fupagua.org",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization", "Content-Disposition"],
   })
@@ -33,9 +33,8 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // Ruta raíz para mostrar que el backend está activo
 app.get("/", (req, res) => {
   res.send(`
-    <h1>✅ Backend FUPAGUA iniciado con éxito!</h1>
-    <p>El servidor está corriendo en el puerto ${PORT}</p>
     
+    <p>El servidor está corriendo</p>
   `);
 });
 
